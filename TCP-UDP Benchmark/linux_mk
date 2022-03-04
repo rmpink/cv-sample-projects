@@ -1,0 +1,50 @@
+CC = g++
+LD = ld
+CFLAGS = -c
+SRC_MAIN= ./src/Main.cpp
+OBJ_MAIN = ./obj/Main.o
+SRC_TCPIP = ./src/TcpIp.cpp
+OBJ_TCPIP = ./obj/TcpIp.o
+SRC_UDP = ./src/Udp.cpp
+OBJ_UDP = ./obj/Udp.o
+SRC_BENCHMARK = ./src/Benchmark.cpp
+OBJ_BENCHMARK = ./obj/Benchmark.o
+STD_HEADERS = ./inc/Benchmark.h ./inc/Udp.h ./inc/TcpIp.h
+
+
+all: main
+
+
+main: ./bin/Main.out
+./bin/Main.out : $(OBJ_MAIN) $(OBJ_TCPIP) $(OBJ_UDP) $(OBJ_BENCHMARK)
+	$(CC) $(OBJ_MAIN) $(OBJ_TCPIP) $(OBJ_UDP) $(OBJ_BENCHMARK) -o $@
+
+./obj/Main.o : $(SRC_MAIN) $(STD_HEADERS)
+	$(CC) $(CFLAGS) $(SRC_MAIN) -o $@
+
+./obj/TcpIp.o : $(SRC_TCPIP) $(STD_HEADERS)
+	$(CC) $(CFLAGS) $(SRC_TCPIP) -o $@
+
+
+udp: ./bin/Udp.out
+./bin/Udp.out : $(OBJ_SERV)
+	$(CC) $(OBJ_SERV) -o $@
+
+./obj/Udp.o : $(SRC_UDP) $(STD_HEADERS)
+	$(CC) $(CFLAGS) $(SRC_UDP) -o $@
+
+
+benchmark: ./bin/Benchmark.out
+./bin/Benchmark.out : $(OBJ_BENCHMARK)
+	$(CC) $(OBJ_BENCHMARK) -o $@
+
+./obj/Benchmark.o : $(SRC_BENCHMARK) $(STD_HEADERS)
+	$(CC) $(CFLAGS) $(SRC_BENCHMARK) -o $@
+
+
+
+clean:
+	rm -f ./obj/*.o
+	rm -f ./bin/*
+
+

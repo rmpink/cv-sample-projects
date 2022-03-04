@@ -1,0 +1,30 @@
+(?<=/\*)afwga(?!\*/)*(?=\*/)
+
+
+/* */ Comment multiline regex /\*([^*]|[\r\n]|(\*+([^*/]|[\r\n])))*\*+/
+
+
+(broken) int main(char * argv[], int argc);    int main ?\((char *\* *argv\[\], int argc)\) ?;
+
+
+int main(void);		int main *\( *void *\)
+
+
+FILE *fp			FILE *\* *([^;])* *;
+
+strlen(buf)			strlen *\( *([^ \(\);])* *\) *;
+
+
+int=atoi(str)		atoi *\( *([^ \(\);])* *\) *;
+
+
+printf("asd"); and printf("asd", adsf, adf);   printf *\( *".*" *(, *([^ \(\);])* *)* *\) *;
+
+
+printf \n			(?<!([\\]))\\n
+
+
+fopen(varName, varName) or fopen("string", "string")		fopen *\( *[^ ].* *, *[^ ].* *\)
+
+
+fgets(buf,size,fp) of fgets("asdsa","asd","asd")			fgets *\( *[^ ].* *, *[^ ].* *, *[^ ].* *\)

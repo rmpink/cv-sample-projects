@@ -1,0 +1,25 @@
+Key Elements
+============
+ConsoleIOLib	#include <stdio.h>	using System.Text;
+FileIOLib		#include <stdlib.h>	using System.IO;
+StrIOLib		#include <string.h> using System;
+
+Main			int main(void)		{namespace}{class}static int Main(string[] args)
+File			FILE *fp			FileStream fp
+StringSize		strlen(buf)			buf.length()
+StrToInt		int=atoi(str)		int=Convert.ToInt(str)
+
+FileOpen		fopen(path,perm)	File.Open(path,FileMode.OpenOrCreate,FileAccess.perm)
+FileClose		fclose(fp)			File.Close()
+FileWrite		fprintf(fp,str)		fp.Write(str,0,str.length())
+FileRead		fgets(buf,size,fp)	fp.Read(buf,0,size)
+
+ConsolePrint	printf(str,args)	Console.Write/WriteLine(str,args)
+
+VERBATIM Elements
+=================
+operations (int++, num1 * num2, etc)
+comments
+for
+while
+return

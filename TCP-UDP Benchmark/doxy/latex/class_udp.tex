@@ -1,0 +1,128 @@
+\hypertarget{class_udp}{\section{Udp Class Reference}
+\label{class_udp}\index{Udp@{Udp}}
+}
+
+
+Binds and socket and provides methods for sending and receiving datagram messages.  
+
+
+
+
+{\ttfamily \#include $<$Udp.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_udp_af02656c58abb169fed14879aa301d8b5}{Udp} (void)
+\begin{DoxyCompactList}\small\item\em {\bfseries Brief Description\-:} \hyperlink{class_udp}{Udp} default constructor. \end{DoxyCompactList}\item 
+int \hyperlink{class_udp_a59d0fcaf80186548de9e01449dcdfc56}{Secure\-Host} (const char $\ast$const ip\-Address, int port\-Num)
+\begin{DoxyCompactList}\small\item\em {\bfseries Brief Description\-:} Binds a socket and port number and looks up a host name. \end{DoxyCompactList}\item 
+int \hyperlink{class_udp_aac5c5629d5372ec0b693b4b207c7f7cf}{Bind\-Socket} (int port\-Num)
+\begin{DoxyCompactList}\small\item\em {\bfseries Brief Description\-:} Binds a U\-D\-P socket and port number. \end{DoxyCompactList}\item 
+int \hyperlink{class_udp_a78da622d0b317ffe20ca1f20ea4f5311}{Read\-Msg} (char $\ast$buffer, int buf\-\_\-size)
+\begin{DoxyCompactList}\small\item\em {\bfseries Brief Description\-:} Reads a U\-D\-P message from a socket. \end{DoxyCompactList}\item 
+int \hyperlink{class_udp_a2fa8b855a78c2707a10f5fff95b4234f}{Send\-Msg} (const char $\ast$const ip\-Address, int type, short length, const char $\ast$message)
+\begin{DoxyCompactList}\small\item\em {\bfseries Brief Description\-:} Sends a U\-D\-P message. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Binds and socket and provides methods for sending and receiving datagram messages. 
+
+The \hyperlink{class_udp}{Udp} class contains the methods required for binding a socket and sending and receiving datagram messages. It currently only supports binding one socket at a time. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_udp_af02656c58abb169fed14879aa301d8b5}{\index{Udp@{Udp}!Udp@{Udp}}
+\index{Udp@{Udp}!Udp@{Udp}}
+\subsubsection[{Udp}]{\setlength{\rightskip}{0pt plus 5cm}Udp\-::\-Udp (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_udp_af02656c58abb169fed14879aa301d8b5}
+
+
+{\bfseries Brief Description\-:} \hyperlink{class_udp}{Udp} default constructor. 
+
+{\bfseries Detailed Description\-:} Default constructor for the \hyperlink{class_udp}{Udp} class. It initializes the com\-Socket and port\-Num to known values. $<$ Socket that the connection is made through
+
+$<$ Port number that messages are sent or received from. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_udp_aac5c5629d5372ec0b693b4b207c7f7cf}{\index{Udp@{Udp}!Bind\-Socket@{Bind\-Socket}}
+\index{Bind\-Socket@{Bind\-Socket}!Udp@{Udp}}
+\subsubsection[{Bind\-Socket}]{\setlength{\rightskip}{0pt plus 5cm}int Udp\-::\-Bind\-Socket (
+\begin{DoxyParamCaption}
+\item[{int}]{port\-Num}
+\end{DoxyParamCaption}
+)}}\label{class_udp_aac5c5629d5372ec0b693b4b207c7f7cf}
+
+
+{\bfseries Brief Description\-:} Binds a U\-D\-P socket and port number. 
+
+{\bfseries Detailed Description\-:} Binds a socket and port number based on the port number provided for use with the U\-D\-P protocol.
+
+\mbox{[}in\mbox{]} port\-Num {\bfseries  int } The port number the socket will bound on.
+
+\begin{DoxyReturn}{Returns}
+return\-Status {\bfseries  int } The status of binding the socket. 0 = Failed, 1 = Success. 
+\end{DoxyReturn}
+\hypertarget{class_udp_a78da622d0b317ffe20ca1f20ea4f5311}{\index{Udp@{Udp}!Read\-Msg@{Read\-Msg}}
+\index{Read\-Msg@{Read\-Msg}!Udp@{Udp}}
+\subsubsection[{Read\-Msg}]{\setlength{\rightskip}{0pt plus 5cm}int Udp\-::\-Read\-Msg (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{buffer, }
+\item[{int}]{buf\-\_\-size}
+\end{DoxyParamCaption}
+)}}\label{class_udp_a78da622d0b317ffe20ca1f20ea4f5311}
+
+
+{\bfseries Brief Description\-:} Reads a U\-D\-P message from a socket. 
+
+{\bfseries Detailed Description\-:} Reads a message of a socket using the U\-D\-P protocol. The message is stored in the buffer provided.
+
+\mbox{[}in\mbox{]} buffer {\bfseries  int } The buffer the message will be stored in. \mbox{[}in\mbox{]} buf\-\_\-size {\bfseries  int } The expected size of the message. \begin{DoxyReturn}{Returns}
+bytes\-Read {\bfseries  int } The number of bytes read. 
+\end{DoxyReturn}
+\hypertarget{class_udp_a59d0fcaf80186548de9e01449dcdfc56}{\index{Udp@{Udp}!Secure\-Host@{Secure\-Host}}
+\index{Secure\-Host@{Secure\-Host}!Udp@{Udp}}
+\subsubsection[{Secure\-Host}]{\setlength{\rightskip}{0pt plus 5cm}int Udp\-::\-Secure\-Host (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$const}]{ip\-Address, }
+\item[{int}]{port\-Num}
+\end{DoxyParamCaption}
+)}}\label{class_udp_a59d0fcaf80186548de9e01449dcdfc56}
+
+
+{\bfseries Brief Description\-:} Binds a socket and port number and looks up a host name. 
+
+{\bfseries Detailed Description\-:} Binds a socket and port number and looks up for a host name based on the ip address and port number provided.
+
+\mbox{[}in\mbox{]} ip\-Address {\bfseries  const char $\ast$ const } The ip address we are using to get the host. \mbox{[}in\mbox{]} port\-Num {\bfseries  int } The port number the socket will bound on. \begin{DoxyReturn}{Returns}
+return\-Status {\bfseries  int } Status of securing a host. 0 = Failed, 1 = Success. 
+\end{DoxyReturn}
+\hypertarget{class_udp_a2fa8b855a78c2707a10f5fff95b4234f}{\index{Udp@{Udp}!Send\-Msg@{Send\-Msg}}
+\index{Send\-Msg@{Send\-Msg}!Udp@{Udp}}
+\subsubsection[{Send\-Msg}]{\setlength{\rightskip}{0pt plus 5cm}int Udp\-::\-Send\-Msg (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$const}]{ip\-Address, }
+\item[{int}]{type, }
+\item[{short}]{length, }
+\item[{const char $\ast$}]{message}
+\end{DoxyParamCaption}
+)}}\label{class_udp_a2fa8b855a78c2707a10f5fff95b4234f}
+
+
+{\bfseries Brief Description\-:} Sends a U\-D\-P message. 
+
+{\bfseries Detailed Description\-:} Sends a message using using the U\-D\-P protocol to the address specified.
+
+\mbox{[}in\mbox{]} ip\-Address {\bfseries  const char $\ast$ const } The address we are sending the message to. \mbox{[}in\mbox{]} type {\bfseries  int } The type of message we sending. \mbox{[}in\mbox{]} length {\bfseries  short } The length of the message we are sending. \mbox{[}in\mbox{]} message {\bfseries  const char $\ast$ } The buffer containing the message we are sending.
+
+\begin{DoxyReturn}{Returns}
+bytes\-Sent {\bfseries  int } The number of bytes sent. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+trunk/\-I\-A\-D\-A1/inc/\hyperlink{_udp_8h}{Udp.\-h}\item 
+trunk/\-I\-A\-D\-A1/src/\hyperlink{_udp_8cpp}{Udp.\-cpp}\end{DoxyCompactItemize}

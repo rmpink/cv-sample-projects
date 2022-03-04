@@ -1,0 +1,148 @@
+\hypertarget{class_benchmark}{\section{Benchmark Class Reference}
+\label{class_benchmark}\index{Benchmark@{Benchmark}}
+}
+
+
+Provides benchmark tests for U\-D\-P and T\-C\-P communications.  
+
+
+
+
+{\ttfamily \#include $<$Benchmark.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_benchmark_a136c0926fa65758b23a5e162eaa0e68b}{Benchmark} (int argc, char $\ast$$\ast$argv)
+\begin{DoxyCompactList}\small\item\em {\bfseries Brief Description\-:} \hyperlink{class_benchmark}{Benchmark} default constructor. \end{DoxyCompactList}\item 
+bool \hyperlink{class_benchmark_a824761ac867dc7f643b647924dba5cc4}{Start} (void)
+\begin{DoxyCompactList}\small\item\em {\bfseries Brief Description\-:} Starts the benchmark. \end{DoxyCompactList}\item 
+bool \hyperlink{class_benchmark_a13a1597b06c2cc084cdacdb5cbd5a6a4}{Stop} (void)
+\begin{DoxyCompactList}\small\item\em {\bfseries Brief Description\-:} Stops the benchmark. \end{DoxyCompactList}\item 
+int \hyperlink{class_benchmark_ab4e9d938830b807398f21078a15ef463}{Get\-Time\-Elapsed} (void)
+\begin{DoxyCompactList}\small\item\em {\bfseries Brief Description\-:} Accessor method for the benchmark's elapses time. \end{DoxyCompactList}\item 
+int \hyperlink{class_benchmark_a291165d2e0dee12a522ec56c8e1429b2}{Run\-Test} (int \-\_\-protocol, int \-\_\-msg\-Size, int \-\_\-num\-Blocks)
+\begin{DoxyCompactList}\small\item\em {\bfseries Brief Description\-:} Begins a benchmark test. \end{DoxyCompactList}\item 
+bool \hyperlink{class_benchmark_adb920711bc70e21a2d606853fa00db59}{Is\-Client} (void)
+\begin{DoxyCompactList}\small\item\em {\bfseries Brief Description\-:} Determines if benchmark is acting as client or server. \end{DoxyCompactList}\item 
+\hyperlink{structargs}{args} \hyperlink{class_benchmark_aa0cdce5ea0948552fa070f72001cf9fb}{Get\-Args} (void)
+\begin{DoxyCompactList}\small\item\em {\bfseries Brief Description\-:} Accessor for the benchmark arugments. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provides benchmark tests for U\-D\-P and T\-C\-P communications. 
+
+Contains a series of tests for benchmark U\-D\-P and T\-C\-P communications against each other. The benchmarks are performed by timing how long a series of a data blocks take to be transmitted from one computer to the next. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_benchmark_a136c0926fa65758b23a5e162eaa0e68b}{\index{Benchmark@{Benchmark}!Benchmark@{Benchmark}}
+\index{Benchmark@{Benchmark}!Benchmark@{Benchmark}}
+\subsubsection[{Benchmark}]{\setlength{\rightskip}{0pt plus 5cm}Benchmark\-::\-Benchmark (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}}\label{class_benchmark_a136c0926fa65758b23a5e162eaa0e68b}
+
+
+{\bfseries Brief Description\-:} \hyperlink{class_benchmark}{Benchmark} default constructor. 
+
+{\bfseries Detailed Description\-:} Default constructor for the \hyperlink{class_benchmark}{Benchmark} class. It initializes the m\-Start\-Time, m\-Stop\-Time, and m\-Is\-Running flag to 0. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_benchmark_aa0cdce5ea0948552fa070f72001cf9fb}{\index{Benchmark@{Benchmark}!Get\-Args@{Get\-Args}}
+\index{Get\-Args@{Get\-Args}!Benchmark@{Benchmark}}
+\subsubsection[{Get\-Args}]{\setlength{\rightskip}{0pt plus 5cm}{\bf args} Benchmark\-::\-Get\-Args (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_benchmark_aa0cdce5ea0948552fa070f72001cf9fb}
+
+
+{\bfseries Brief Description\-:} Accessor for the benchmark arugments. 
+
+{\bfseries Detailed Description\-:} Accessor method for returning the benchmark arguments.
+
+\begin{DoxyReturn}{Returns}
+m\-Arguments {\bfseries  args } An args struct containing the arguments used in the benchmark. 
+\end{DoxyReturn}
+\hypertarget{class_benchmark_ab4e9d938830b807398f21078a15ef463}{\index{Benchmark@{Benchmark}!Get\-Time\-Elapsed@{Get\-Time\-Elapsed}}
+\index{Get\-Time\-Elapsed@{Get\-Time\-Elapsed}!Benchmark@{Benchmark}}
+\subsubsection[{Get\-Time\-Elapsed}]{\setlength{\rightskip}{0pt plus 5cm}int Benchmark\-::\-Get\-Time\-Elapsed (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_benchmark_ab4e9d938830b807398f21078a15ef463}
+
+
+{\bfseries Brief Description\-:} Accessor method for the benchmark's elapses time. 
+
+{\bfseries Detailed Description\-:} Determines and returns the elapsed time of the benchmark.
+
+\begin{DoxyReturn}{Returns}
+time\-Elapsed {\bfseries  int } The time elapsed since the benchmark was started. 
+\end{DoxyReturn}
+\hypertarget{class_benchmark_adb920711bc70e21a2d606853fa00db59}{\index{Benchmark@{Benchmark}!Is\-Client@{Is\-Client}}
+\index{Is\-Client@{Is\-Client}!Benchmark@{Benchmark}}
+\subsubsection[{Is\-Client}]{\setlength{\rightskip}{0pt plus 5cm}bool Benchmark\-::\-Is\-Client (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_benchmark_adb920711bc70e21a2d606853fa00db59}
+
+
+{\bfseries Brief Description\-:} Determines if benchmark is acting as client or server. 
+
+{\bfseries Detailed Description\-:} This method determines if the benchmark is currently running as the server or as the client and returns the result.
+
+\begin{DoxyReturn}{Returns}
+!is\-Server {\bfseries  bool } Whether or not the benchmark is acting as the client or server. 
+\end{DoxyReturn}
+\hypertarget{class_benchmark_a291165d2e0dee12a522ec56c8e1429b2}{\index{Benchmark@{Benchmark}!Run\-Test@{Run\-Test}}
+\index{Run\-Test@{Run\-Test}!Benchmark@{Benchmark}}
+\subsubsection[{Run\-Test}]{\setlength{\rightskip}{0pt plus 5cm}int Benchmark\-::\-Run\-Test (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-protocol, }
+\item[{int}]{\-\_\-msg\-Size, }
+\item[{int}]{\-\_\-num\-Blocks}
+\end{DoxyParamCaption}
+)}}\label{class_benchmark_a291165d2e0dee12a522ec56c8e1429b2}
+
+
+{\bfseries Brief Description\-:} Begins a benchmark test. 
+
+{\bfseries Detailed Description\-:} Starts performing a benchmark test on the specified protocol with the specified message size and number of messages. This test is current flawed as it only tests the time to push the data the N\-I\-C and does not take into account the time it takes for the data to reach the computer.
+
+\mbox{[}in\mbox{]} \-\_\-protocol {\bfseries  int } Which protocol to use. T\-C\-P/\-I\-P or U\-D\-P \mbox{[}in\mbox{]} message\-Type {\bfseries  int } The size of the message to be sent. \mbox{[}in\mbox{]} \-\_\-num\-Blocks {\bfseries  int } The number of times to send the message.
+
+\begin{DoxyReturn}{Returns}
+time\-Elapsed {\bfseries  int } The time it took to push all the data to the N\-I\-C. 
+\end{DoxyReturn}
+\hypertarget{class_benchmark_a824761ac867dc7f643b647924dba5cc4}{\index{Benchmark@{Benchmark}!Start@{Start}}
+\index{Start@{Start}!Benchmark@{Benchmark}}
+\subsubsection[{Start}]{\setlength{\rightskip}{0pt plus 5cm}bool Benchmark\-::\-Start (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_benchmark_a824761ac867dc7f643b647924dba5cc4}
+
+
+{\bfseries Brief Description\-:} Starts the benchmark. 
+
+{\bfseries Detailed Description\-:} Stars the benchmark if it is not already running. \hypertarget{class_benchmark_a13a1597b06c2cc084cdacdb5cbd5a6a4}{\index{Benchmark@{Benchmark}!Stop@{Stop}}
+\index{Stop@{Stop}!Benchmark@{Benchmark}}
+\subsubsection[{Stop}]{\setlength{\rightskip}{0pt plus 5cm}bool Benchmark\-::\-Stop (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_benchmark_a13a1597b06c2cc084cdacdb5cbd5a6a4}
+
+
+{\bfseries Brief Description\-:} Stops the benchmark. 
+
+{\bfseries Detailed Description\-:} Stops the benchmark if it is running. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+trunk/\-I\-A\-D\-A1/inc/\hyperlink{_benchmark_8h}{Benchmark.\-h}\item 
+trunk/\-I\-A\-D\-A1/src/\hyperlink{_benchmark_8cpp}{Benchmark.\-cpp}\end{DoxyCompactItemize}

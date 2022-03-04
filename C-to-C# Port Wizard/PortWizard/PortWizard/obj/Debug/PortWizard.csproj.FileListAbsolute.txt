@@ -1,0 +1,6 @@
+C:\Users\ryan\Documents\School\IAD\stalin\trunk\PortWizard\PortWizard\PortWizard\bin\Debug\PortWizard.exe.config
+C:\Users\ryan\Documents\School\IAD\stalin\trunk\PortWizard\PortWizard\PortWizard\bin\Debug\PortWizard.exe
+C:\Users\ryan\Documents\School\IAD\stalin\trunk\PortWizard\PortWizard\PortWizard\bin\Debug\PortWizard.pdb
+C:\Users\ryan\Documents\School\IAD\stalin\trunk\PortWizard\PortWizard\PortWizard\obj\Debug\PortWizard.csprojResolveAssemblyReference.cache
+C:\Users\ryan\Documents\School\IAD\stalin\trunk\PortWizard\PortWizard\PortWizard\obj\Debug\PortWizard.exe
+C:\Users\ryan\Documents\School\IAD\stalin\trunk\PortWizard\PortWizard\PortWizard\obj\Debug\PortWizard.pdb

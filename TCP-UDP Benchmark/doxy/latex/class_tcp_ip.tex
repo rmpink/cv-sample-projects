@@ -1,0 +1,145 @@
+\hypertarget{class_tcp_ip}{\section{Tcp\-Ip Class Reference}
+\label{class_tcp_ip}\index{Tcp\-Ip@{Tcp\-Ip}}
+}
+
+
+Creates or listens to a Tcp/\-I\-P connection for sending and recieving data.  
+
+
+
+
+{\ttfamily \#include $<$Tcp\-Ip.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_tcp_ip_a02d777e201cc83b63b80d4b0f0da5867}{Tcp\-Ip} (void)
+\begin{DoxyCompactList}\small\item\em {\bfseries Brief Description\-:} \hyperlink{class_tcp_ip}{Tcp\-Ip} default constructor. \end{DoxyCompactList}\item 
+int \hyperlink{class_tcp_ip_a063576e534846f0e396aabadc1f40673}{Connect} (const char $\ast$const ip\-Address, int port\-Num)
+\begin{DoxyCompactList}\small\item\em {\bfseries Brief Description\-:} Initiates a connection to another computer. \end{DoxyCompactList}\item 
+int \hyperlink{class_tcp_ip_a9480c3b6ef549b3626b031c63e168038}{Listen} (int port\-Num)
+\begin{DoxyCompactList}\small\item\em {\bfseries Brief Description\-:} Starts a listen server. \end{DoxyCompactList}\item 
+void \hyperlink{class_tcp_ip_a7fea212b99a95097982d588e9b02a07c}{Disconnect} (void)
+\begin{DoxyCompactList}\small\item\em {\bfseries Brief Description\-:} Close current connection. \end{DoxyCompactList}\item 
+\hypertarget{class_tcp_ip_a1be8bd5ea7b0750e12af7e2f201778e5}{bool {\bfseries Is\-Connected} (void)}\label{class_tcp_ip_a1be8bd5ea7b0750e12af7e2f201778e5}
+
+\item 
+int \hyperlink{class_tcp_ip_ae079636469eb882428a320882fe76910}{Read\-Msg} (unsigned short $\ast$size, char $\ast$$\ast$message)
+\begin{DoxyCompactList}\small\item\em {\bfseries Brief Description\-:} Reads a message from the T\-C\-P/\-I\-P stack \end{DoxyCompactList}\item 
+int \hyperlink{class_tcp_ip_a13e3652bea5f965e1300bf7e635b86bb}{Send\-Msg} (char type, unsigned short length, const char $\ast$message)
+\begin{DoxyCompactList}\small\item\em {\bfseries Brief Description\-:} Sends a T\-L\-V message. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Creates or listens to a Tcp/\-I\-P connection for sending and recieving data. 
+
+The \hyperlink{class_tcp_ip}{Tcp\-Ip} class contains the methods required for establishing a T\-C\-P/\-I\-P connection. It is capable of either acting as a server and listening for connections, or attempting a connection to an already running server. In addition, 2 methods are provided for sending and receiving messages. Currently only 1 connection is supported. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_tcp_ip_a02d777e201cc83b63b80d4b0f0da5867}{\index{Tcp\-Ip@{Tcp\-Ip}!Tcp\-Ip@{Tcp\-Ip}}
+\index{Tcp\-Ip@{Tcp\-Ip}!TcpIp@{Tcp\-Ip}}
+\subsubsection[{Tcp\-Ip}]{\setlength{\rightskip}{0pt plus 5cm}Tcp\-Ip\-::\-Tcp\-Ip (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_tcp_ip_a02d777e201cc83b63b80d4b0f0da5867}
+
+
+{\bfseries Brief Description\-:} \hyperlink{class_tcp_ip}{Tcp\-Ip} default constructor. 
+
+{\bfseries Detailed Description\-:} Default constructor for the \hyperlink{class_tcp_ip}{Tcp\-Ip} class. It initializes the com\-Socket and port\-Num to known values. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_tcp_ip_a063576e534846f0e396aabadc1f40673}{\index{Tcp\-Ip@{Tcp\-Ip}!Connect@{Connect}}
+\index{Connect@{Connect}!TcpIp@{Tcp\-Ip}}
+\subsubsection[{Connect}]{\setlength{\rightskip}{0pt plus 5cm}int Tcp\-Ip\-::\-Connect (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$const}]{ip\-Address, }
+\item[{int}]{port\-Num}
+\end{DoxyParamCaption}
+)}}\label{class_tcp_ip_a063576e534846f0e396aabadc1f40673}
+
+
+{\bfseries Brief Description\-:} Initiates a connection to another computer. 
+
+{\bfseries Detailed Description\-:} Connection method initiating a connection to another computer. Connects to the ip address specified on the port specified and prints the status of the connection to the screen.
+
+\mbox{[}in\mbox{]} ip\-Address {\bfseries  const char $\ast$ const } The I\-P address of the computer to connect to. \mbox{[}in\mbox{]} port\-Num {\bfseries  int } The port number the connection will be made on.
+
+\begin{DoxyReturn}{Returns}
+T\-B\-D {\bfseries  int } T\-B\-D 
+\end{DoxyReturn}
+\hypertarget{class_tcp_ip_a7fea212b99a95097982d588e9b02a07c}{\index{Tcp\-Ip@{Tcp\-Ip}!Disconnect@{Disconnect}}
+\index{Disconnect@{Disconnect}!TcpIp@{Tcp\-Ip}}
+\subsubsection[{Disconnect}]{\setlength{\rightskip}{0pt plus 5cm}void Tcp\-Ip\-::\-Disconnect (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_tcp_ip_a7fea212b99a95097982d588e9b02a07c}
+
+
+{\bfseries Brief Description\-:} Close current connection. 
+
+{\bfseries Detailed Description\-:} Closes the connection if it is open. Applies to listening and connecting. \hypertarget{class_tcp_ip_a9480c3b6ef549b3626b031c63e168038}{\index{Tcp\-Ip@{Tcp\-Ip}!Listen@{Listen}}
+\index{Listen@{Listen}!TcpIp@{Tcp\-Ip}}
+\subsubsection[{Listen}]{\setlength{\rightskip}{0pt plus 5cm}int Tcp\-Ip\-::\-Listen (
+\begin{DoxyParamCaption}
+\item[{int}]{port\-Num}
+\end{DoxyParamCaption}
+)}}\label{class_tcp_ip_a9480c3b6ef549b3626b031c63e168038}
+
+
+{\bfseries Brief Description\-:} Starts a listen server. 
+
+{\bfseries Detailed Description\-:} Starts a listen server for listening to and accepting incomming connections on the port number specified. Currently only accepts 1 connection at a time.
+
+\mbox{[}in\mbox{]} port\-Num {\bfseries  int } The port number the listen server will listen on.
+
+\begin{DoxyReturn}{Returns}
+T\-B\-D {\bfseries  int } T\-B\-D 
+\end{DoxyReturn}
+\hypertarget{class_tcp_ip_ae079636469eb882428a320882fe76910}{\index{Tcp\-Ip@{Tcp\-Ip}!Read\-Msg@{Read\-Msg}}
+\index{Read\-Msg@{Read\-Msg}!TcpIp@{Tcp\-Ip}}
+\subsubsection[{Read\-Msg}]{\setlength{\rightskip}{0pt plus 5cm}int Tcp\-Ip\-::\-Read\-Msg (
+\begin{DoxyParamCaption}
+\item[{unsigned short $\ast$}]{size, }
+\item[{char $\ast$$\ast$}]{message}
+\end{DoxyParamCaption}
+)}}\label{class_tcp_ip_ae079636469eb882428a320882fe76910}
+
+
+{\bfseries Brief Description\-:} Reads a message from the T\-C\-P/\-I\-P stack 
+
+{\bfseries Detailed Description\-:} Attempts to read a message if it exists from the T\-C\-P/\-I\-P stack. If a message exists, it will determine the type and length, and then allocate enough memory to finally store the message. A pointer to the message is returned to the caller which must be free'd by the caller at some point.
+
+\mbox{[}out\mbox{]} size {\bfseries  unsigned short $\ast$ } The length of the message received. \mbox{[}out\mbox{]} message {\bfseries  char $\ast$ } The contents of the message in a byte array.
+
+\begin{DoxyReturn}{Returns}
+message\-Type {\bfseries  int } The type of message received. -\/1 Means error. 
+\end{DoxyReturn}
+\hypertarget{class_tcp_ip_a13e3652bea5f965e1300bf7e635b86bb}{\index{Tcp\-Ip@{Tcp\-Ip}!Send\-Msg@{Send\-Msg}}
+\index{Send\-Msg@{Send\-Msg}!TcpIp@{Tcp\-Ip}}
+\subsubsection[{Send\-Msg}]{\setlength{\rightskip}{0pt plus 5cm}int Tcp\-Ip\-::\-Send\-Msg (
+\begin{DoxyParamCaption}
+\item[{char}]{type, }
+\item[{unsigned short}]{length, }
+\item[{const char $\ast$}]{message}
+\end{DoxyParamCaption}
+)}}\label{class_tcp_ip_a13e3652bea5f965e1300bf7e635b86bb}
+
+
+{\bfseries Brief Description\-:} Sends a T\-L\-V message. 
+
+{\bfseries Detailed Description\-:} Formats a message into the T\-L\-V and sends it across the network.
+
+\mbox{[}in\mbox{]} port\-Num {\bfseries  int } The port number the listen server will listen on.
+
+\begin{DoxyReturn}{Returns}
+bytes {\bfseries  int } The number of bytes sent. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+trunk/\-I\-A\-D\-A1/inc/\hyperlink{_tcp_ip_8h}{Tcp\-Ip.\-h}\item 
+trunk/\-I\-A\-D\-A1/src/\hyperlink{_tcp_ip_8cpp}{Tcp\-Ip.\-cpp}\end{DoxyCompactItemize}

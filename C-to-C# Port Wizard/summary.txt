@@ -1,0 +1,22 @@
+TAG				ATTR			VALUES			LOOK
+==============================================================
+library			type			'console'		<library />
+								'fileio'
+								'string'
+Main											<main></main>
+File 			name			String 			<file />
+StrLength		param	 		String 			<strlength />
+StrToInt		param			String 			<strtoint />
+				return			String
+FileOpen		path			String 			<fileopen />
+				permission		'read'
+								'write'
+								'readwrite'
+				return			String
+FileClose		file			String 			<fileclose />
+FileWrite		file			String 			<filewrite />
+FileRead		file 			String 			<fileread />
+				length 			String
+				text			String
+ConsoleWrite	text			String 			<consolewrite />
+Verbatim		text			String 			<verbatim></verbatim>n

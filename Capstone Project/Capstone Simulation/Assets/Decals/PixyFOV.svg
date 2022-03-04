@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="177.88412mm"
+   height="90.683784mm"
+   viewBox="0 0 630.29807 321.3205"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   inkscape:export-filename="C:\Users\ryan\Documents\capstone\Capstone Simulation\Assets\PixyFOV.png"
+   inkscape:export-xdpi="95.739998"
+   inkscape:export-ydpi="95.739998"
+   sodipodi:docname="PixyFOV.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="303.84588"
+     inkscape:cy="91.104143"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     units="px"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="-8"
+     inkscape:window-y="324"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-34.851176,0.39257988)">
+    <path
+       style="fill:#8080ff;fill-opacity:0.1254902;stroke:#8080ff;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 329.0332,0.5 C 194.54135,0.6780483 73.3139,77.786402 15.257812,196.70508 l 311.195308,122.38867 2.58008,0.69141 2.5625,-0.6875 311.21289,-122.39454 C 584.7522,77.785349 463.52446,0.67804713 329.0332,0.5 Z"
+       transform="translate(20.966994,0.107421)"
+       id="path4136"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="286.81644"
+       inkscape:export-ydpi="286.81644" />
+  </g>
+</svg>
