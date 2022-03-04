@@ -1,0 +1,77 @@
+/*
+ *	Fun with Typography - Style Sheet
+ *
+ *	Fun fade-in animation courtesy of the Mozilla Developer Network
+ *	https://developer.mozilla.org/en-US/docs/Web/CSS/animation-fill-mode
+ */
+
+body {
+	overflow: hidden;
+}
+
+input[type="text"], textarea {
+
+	font-size: 10px;
+
+	width: 300px;
+	padding: 4px;
+	border: solid 1px #000080;
+}
+
+label {
+	padding-right: 4px;
+}
+
+#ruler {
+	visibility: hidden;
+	white-space: nowrap;
+}
+
+#inputBox {
+	-webkit-border-image:url(border.png) 25 25 /20px 20px stretch; /* Safari 5/Chrome */
+	-moz-border-image:url(border.png) 25 25 /20px 20px stretch;	   /* Firefox */
+	-o-border-image:url(border.png) 25 25 /20px 20px stretch; 	   /* Opera */
+	border-image:url(border.png) 23 23 /20px 20px stretch;	       /* IE */
+	
+	text-align: right;
+	vertical-align: middle;
+
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 12px;
+	color: #000040;
+	letter-spacing: 1px;
+
+	width: 320px;
+	height: 50px;
+	padding: 16px;
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.strDiv {
+	position: absolute;
+	white-space: nowrap;
+
+	opacity: 0;
+    
+    -webkit-animation: fadeIn ease-in 1;   /* Safari 5/Chrome */
+    -moz-animation: fadeIn ease-in 1;	   /* Firefox */
+    -o-animation: fadeIn ease-in 1; 	   /* Opera */
+    animation: fadeIn ease-in 1;	       /* IE/Chrome */
+    
+    -webkit-animation-fill-mode: forwards; /* Safari 5/Chrome */
+    -moz-animation-fill-mode: forwards;	   /* Firefox */
+    -o-animation-fill-mode: forwards; 	   /* Opera */
+    animation-fill-mode: forwards;	       /* IE */
+
+    -webkit-animation-duration: 1s; /* Safari 5/Chrome */
+    -moz-animation-duration: 1s;    /* Firefox */
+    -o-animation-duration: 1s; 	    /* Opera */
+    animation-duration: 1s;	        /* IE */
+}
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } } /* Safari 5/Chrome */
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }	/* Firefox */
+@-o-keyframes fadeIn { from { opacity:0; } to { opacity:1; } } 	    /* Opera */
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }	        /* IE */

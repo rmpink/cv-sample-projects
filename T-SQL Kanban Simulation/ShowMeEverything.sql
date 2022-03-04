@@ -1,0 +1,7 @@
+SELECT * FROM KANBAN.AssemblyStation;
+SELECT * FROM KANBAN.TestTray;
+SELECT * FROM KANBAN.CardTray;
+SELECT * FROM KANBAN.Lamp;
+
+SELECT * FROM KANBAN.PartRequests;
+SELECT * FROM KANBAN.DefectiveLamps;

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- <script type="text/javascript" src="angular.min.js"></script> -->
+    <script type="text/javascript" src="app.js"></script>
+
+    <title>Fun With Typography</title>
+  </head>
+
+  <body id="main">
+  	<span id="ruler"></span>
+
+    <div id="inputBox">
+    	<input class="typo" type="text" id="inputString" placeholder="Enter a string here..." onkeydown="updateCharsLeft( event )" onkeyup="updateCharsLeft( 0 )" autofocus>
+    	<label for="inputString" id="charsLeft"><script type="text/javascript">updateCharsLeft( 0x00 );</script></label>
+    </div>
+  </body>
+
+</html>
