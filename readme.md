@@ -1,5 +1,5 @@
 # Introduction #
-My name is Ryan Pink, and I am a Software Engineering Technology graduate. In this project, I have compiled the beginnings of a code portfolio. All code provided here is for educational and demonstrative purposes only. All of them were developed for my college program under tight deadlines.
+My name is Robyn Pink, and I am a Senior Software Developer. In this project, I have compiled the beginnings of a code portfolio. All code provided here is for educational and demonstrative purposes only. All of them were developed for my college program under tight deadlines.
 
 # Details #
 These are the projects I currently have available for review.
